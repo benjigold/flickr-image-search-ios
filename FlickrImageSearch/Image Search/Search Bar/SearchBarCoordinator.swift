@@ -5,12 +5,12 @@
 //  Created by Benji Gold on 2/25/24.
 //
 
-import Foundation
+import SwiftUI
 
 protocol SearchBarCoordinator {
     func makeCoordinator() -> Coordinator
 }
 
-class Coordinator {
+class Coordinator: UISearchBarDelegate {
     
 }
