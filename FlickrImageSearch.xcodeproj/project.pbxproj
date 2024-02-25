@@ -159,8 +159,16 @@
 			isa = PBXGroup;
 			children = (
 				65695EE32B8BA222009EC000 /* ContentView.swift */,
+				65695F162B8BB16F009EC000 /* Search Bar */,
 			);
 			path = "Image Search";
+			sourceTree = "<group>";
+		};
+		65695F162B8BB16F009EC000 /* Search Bar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Search Bar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
