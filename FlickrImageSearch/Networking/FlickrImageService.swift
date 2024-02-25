@@ -8,5 +8,7 @@
 import Foundation
 
 class FlickrImageService {
-    
+    func fetchImages(searchText: String, completion: @escaping (Result<[FlickrImage], Error>) -> ()) {
+        
+    }
 }
