@@ -11,13 +11,14 @@ struct ContentView: View {
     @StateObject private var viewModel: FlickrImageViewModel = FlickrImageViewModel()
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                SearchBar(text: $viewModel.searchText)
+                    .padding()
+                ImageGridView(images: viewModel.images)
+            }
+            .navigationBarTitle("Flickr Image Search")
         }
-        .padding()
     }
 }
 
