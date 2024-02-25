@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol SearchBarCoordinator {
+    func makeCoordinator() -> Coordinator
+}
