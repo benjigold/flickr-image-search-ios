@@ -208,6 +208,7 @@
 		65695F252B8BC605009EC000 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				65695F292B8BC7B2009EC000 /* Extension */,
 				65695F262B8BC60F009EC000 /* Share */,
 			);
 			path = Common;
@@ -219,6 +220,13 @@
 				65695F272B8BC645009EC000 /* ShareSheetView.swift */,
 			);
 			path = Share;
+			sourceTree = "<group>";
+		};
+		65695F292B8BC7B2009EC000 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
