@@ -31,7 +31,7 @@ struct ImageDetailView: View {
                     }
                 Text("Author: \(flickrImage.author ?? "Unknown")")
                     .font(.subheadline)
-                Text("Published: \(flickrImage.published ?? "Unknown")")
+                Text("Published: \(flickrImage.published?.formatDate() ?? "Unknown")")
                     .font(.footnote)
                 let dimensions = (flickrImage.description ?? "").extractImageDimensions()
                 Text("Width: \(dimensions.width) pixels, Height: \(dimensions.height) pixels")
