@@ -24,6 +24,7 @@
 		65695F212B8BBB5C009EC000 /* FlickrImageServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F202B8BBB5C009EC000 /* FlickrImageServiceTests.swift */; };
 		65695F242B8BBE1E009EC000 /* ImageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F232B8BBE1E009EC000 /* ImageDetailView.swift */; };
 		65695F282B8BC645009EC000 /* ShareSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F272B8BC645009EC000 /* ShareSheetView.swift */; };
+		65695F2B2B8BC7DF009EC000 /* String+HTMLAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F2A2B8BC7DF009EC000 /* String+HTMLAttributedString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		65695F202B8BBB5C009EC000 /* FlickrImageServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageServiceTests.swift; sourceTree = "<group>"; };
 		65695F232B8BBE1E009EC000 /* ImageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailView.swift; sourceTree = "<group>"; };
 		65695F272B8BC645009EC000 /* ShareSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetView.swift; sourceTree = "<group>"; };
+		65695F2A2B8BC7DF009EC000 /* String+HTMLAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HTMLAttributedString.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 		65695F292B8BC7B2009EC000 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				65695F2A2B8BC7DF009EC000 /* String+HTMLAttributedString.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				65695EE22B8BA222009EC000 /* FlickrImageSearchApp.swift in Sources */,
 				65695F102B8BA6A9009EC000 /* FlickrImageFeed.swift in Sources */,
 				65695F0D2B8BA3D9009EC000 /* FlickrImage.swift in Sources */,
+				65695F2B2B8BC7DF009EC000 /* String+HTMLAttributedString.swift in Sources */,
 				65695F242B8BBE1E009EC000 /* ImageDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
