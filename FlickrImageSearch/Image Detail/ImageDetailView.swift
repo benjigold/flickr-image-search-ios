@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ImageDetailView: View {
+    @State private var isShareSheetShowing = false
+    
     let flickrImage: FlickrImage
     
     var body: some View {
@@ -26,6 +28,20 @@ struct ImageDetailView: View {
                     .font(.subheadline)
                 Text("Published: \(flickrImage.published ?? "Unknown")")
                     .font(.footnote)
+                Button(action: { self.isShareSheetShowing = true }) {
+                    Text("Share")
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(Color.blue)
+                        .cornerRadius(40)
+                }.accessibilityHint("Opens a share view to share image and information about the image")
+                .padding()
+                .sheet(isPresented: $isShareSheetShowing) {
+                    if let shareURL = URL(string: flickrImage.media?.m ?? "") {
+                        ShareSheetView(items: [shareURL, flickrImage.title ?? "No title"]) // TODO: include image and metadata
+                    }
+                }
             }
             .padding()
         }
