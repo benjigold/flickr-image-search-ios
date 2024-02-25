@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct ImageGridView: View {
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
     let images: [FlickrImage]
     
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
+            LazyVGrid(columns: columns) {
                 ForEach(images) { image in
                     NavigationLink(value: image) {
                         AsyncImage(url: URL(string: image.media?.m ?? "")) { phase in
@@ -36,6 +37,15 @@ struct ImageGridView: View {
         }
         .navigationDestination(for: FlickrImage.self) { flickrImage in
             ImageDetailView(flickrImage: flickrImage)
+        }
+    }
+    
+    private var columns: [GridItem] {
+        switch horizontalSizeClass {
+        case .compact:
+            return Array(repeating: GridItem(.adaptive(minimum: 100)), count: 2)
+        default:
+            return Array(repeating: GridItem(.adaptive(minimum: 100)), count: 4)
         }
     }
 }
