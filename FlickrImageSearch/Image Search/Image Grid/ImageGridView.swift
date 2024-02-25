@@ -5,4 +5,8 @@
 //  Created by Benji Gold on 2/25/24.
 //
 
-import Foundation
+import SwiftUI
+
+struct ImageGridView: View {
+    
+}
