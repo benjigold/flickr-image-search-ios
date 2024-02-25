@@ -14,6 +14,7 @@
 		65695EF32B8BA223009EC000 /* FlickrImageSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695EF22B8BA223009EC000 /* FlickrImageSearchTests.swift */; };
 		65695EFD2B8BA223009EC000 /* FlickrImageSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695EFC2B8BA223009EC000 /* FlickrImageSearchUITests.swift */; };
 		65695EFF2B8BA223009EC000 /* FlickrImageSearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695EFE2B8BA223009EC000 /* FlickrImageSearchUITestsLaunchTests.swift */; };
+		65695F0D2B8BA3D9009EC000 /* FlickrImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F0C2B8BA3D9009EC000 /* FlickrImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		65695EF82B8BA223009EC000 /* FlickrImageSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickrImageSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65695EFC2B8BA223009EC000 /* FlickrImageSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageSearchUITests.swift; sourceTree = "<group>"; };
 		65695EFE2B8BA223009EC000 /* FlickrImageSearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageSearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		65695F0C2B8BA3D9009EC000 /* FlickrImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		65695F0B2B8BA392009EC000 /* Flickr Image */ = {
 			isa = PBXGroup;
 			children = (
+				65695F0C2B8BA3D9009EC000 /* FlickrImage.swift */,
 			);
 			path = "Flickr Image";
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				65695EE42B8BA222009EC000 /* ContentView.swift in Sources */,
 				65695EE22B8BA222009EC000 /* FlickrImageSearchApp.swift in Sources */,
+				65695F0D2B8BA3D9009EC000 /* FlickrImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
