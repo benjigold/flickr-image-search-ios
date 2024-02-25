@@ -15,7 +15,7 @@ struct ImageDetailView: View {
     
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 10) {
+            VStack(alignment: .center, spacing: 10) {
                 AsyncImage(url: URL(string: flickrImage.media?.m ?? ""))
                     .aspectRatio(contentMode: .fit)
                     .accessibilityLabel("Image: \(flickrImage.title ?? "No Image")")
