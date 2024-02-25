@@ -17,5 +17,9 @@ class FlickrImageService {
         urlComponents.queryItems = queryItems
         
         guard let url = urlComponents.url else { return }
+        
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            
+        }.resume()
     }
 }
