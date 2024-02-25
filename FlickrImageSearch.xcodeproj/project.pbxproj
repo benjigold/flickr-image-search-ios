@@ -18,6 +18,7 @@
 		65695F102B8BA6A9009EC000 /* FlickrImageFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F0F2B8BA6A9009EC000 /* FlickrImageFeed.swift */; };
 		65695F122B8BA828009EC000 /* FlickrImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F112B8BA828009EC000 /* FlickrImageService.swift */; };
 		65695F142B8BACFC009EC000 /* FlickrImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F132B8BACFC009EC000 /* FlickrImageViewModel.swift */; };
+		65695F182B8BB229009EC000 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F172B8BB229009EC000 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		65695F0F2B8BA6A9009EC000 /* FlickrImageFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageFeed.swift; sourceTree = "<group>"; };
 		65695F112B8BA828009EC000 /* FlickrImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageService.swift; sourceTree = "<group>"; };
 		65695F132B8BACFC009EC000 /* FlickrImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageViewModel.swift; sourceTree = "<group>"; };
+		65695F172B8BB229009EC000 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 		65695F162B8BB16F009EC000 /* Search Bar */ = {
 			isa = PBXGroup;
 			children = (
+				65695F172B8BB229009EC000 /* SearchBar.swift */,
 			);
 			path = "Search Bar";
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65695F182B8BB229009EC000 /* SearchBar.swift in Sources */,
 				65695EE42B8BA222009EC000 /* ContentView.swift in Sources */,
 				65695F142B8BACFC009EC000 /* FlickrImageViewModel.swift in Sources */,
 				65695F122B8BA828009EC000 /* FlickrImageService.swift in Sources */,
