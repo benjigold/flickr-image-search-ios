@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct FlickrImage {
+struct FlickrImage: Identifiable {
     let id: UUID = UUID()
     let title: String?
     let link: String?
