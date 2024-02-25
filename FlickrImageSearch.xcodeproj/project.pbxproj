@@ -164,6 +164,7 @@
 			children = (
 				65695EE32B8BA222009EC000 /* ContentView.swift */,
 				65695F162B8BB16F009EC000 /* Search Bar */,
+				65695F1B2B8BB6E6009EC000 /* Image Grid */,
 			);
 			path = "Image Search";
 			sourceTree = "<group>";
@@ -175,6 +176,13 @@
 				65695F192B8BB368009EC000 /* SearchBarCoordinator.swift */,
 			);
 			path = "Search Bar";
+			sourceTree = "<group>";
+		};
+		65695F1B2B8BB6E6009EC000 /* Image Grid */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Image Grid";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
