@@ -96,6 +96,7 @@
 		65695EE02B8BA222009EC000 /* FlickrImageSearch */ = {
 			isa = PBXGroup;
 			children = (
+				65695F0E2B8BA620009EC000 /* Networking */,
 				65695F0B2B8BA392009EC000 /* Flickr Image */,
 				65695EE12B8BA222009EC000 /* FlickrImageSearchApp.swift */,
 				65695EE32B8BA222009EC000 /* ContentView.swift */,
@@ -136,6 +137,13 @@
 				65695F0C2B8BA3D9009EC000 /* FlickrImage.swift */,
 			);
 			path = "Flickr Image";
+			sourceTree = "<group>";
+		};
+		65695F0E2B8BA620009EC000 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
