@@ -15,5 +15,7 @@ class FlickrImageService {
                                           URLQueryItem(name: "tags", value: searchText)]
         var urlComponents: URLComponents = URLComponents(string: baseUrl)!
         urlComponents.queryItems = queryItems
+        
+        guard let url = urlComponents.url else { return }
     }
 }
