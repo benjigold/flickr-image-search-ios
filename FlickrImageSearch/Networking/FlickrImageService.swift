@@ -23,6 +23,11 @@ class FlickrImageService {
                 completion(.failure(error))
                 return
             }
+            
+            guard let data else {
+                completion(.failure(NSError(domain: "", code: -1, userInfo: nil)))
+                return
+            }
         }.resume()
     }
 }
