@@ -106,7 +106,6 @@
 				65695F0B2B8BA392009EC000 /* Flickr Image */,
 				65695F152B8BB0A8009EC000 /* Image Search */,
 				65695EE12B8BA222009EC000 /* FlickrImageSearchApp.swift */,
-				65695EE32B8BA222009EC000 /* ContentView.swift */,
 				65695EE52B8BA223009EC000 /* Assets.xcassets */,
 				65695EE72B8BA223009EC000 /* Preview Content */,
 			);
@@ -159,6 +158,7 @@
 		65695F152B8BB0A8009EC000 /* Image Search */ = {
 			isa = PBXGroup;
 			children = (
+				65695EE32B8BA222009EC000 /* ContentView.swift */,
 			);
 			path = "Image Search";
 			sourceTree = "<group>";
