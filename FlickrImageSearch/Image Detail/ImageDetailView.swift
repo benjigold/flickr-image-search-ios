@@ -29,7 +29,7 @@ struct ImageDetailView: View {
                             self.attributedDescription = attributedString
                         }
                     }
-                Text("Author: \(flickrImage.author ?? "Unknown")")
+                Text("Author: \(flickrImage.author?.formatAuthor() ?? "Unknown")")
                     .font(.subheadline)
                 Text("Published: \(flickrImage.published?.formatDate() ?? "Unknown")")
                     .font(.footnote)
