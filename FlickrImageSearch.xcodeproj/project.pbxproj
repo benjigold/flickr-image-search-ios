@@ -23,6 +23,7 @@
 		65695F1D2B8BB748009EC000 /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F1C2B8BB748009EC000 /* ImageGridView.swift */; };
 		65695F212B8BBB5C009EC000 /* FlickrImageServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F202B8BBB5C009EC000 /* FlickrImageServiceTests.swift */; };
 		65695F242B8BBE1E009EC000 /* ImageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F232B8BBE1E009EC000 /* ImageDetailView.swift */; };
+		65695F282B8BC645009EC000 /* ShareSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F272B8BC645009EC000 /* ShareSheetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		65695F1C2B8BB748009EC000 /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
 		65695F202B8BBB5C009EC000 /* FlickrImageServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageServiceTests.swift; sourceTree = "<group>"; };
 		65695F232B8BBE1E009EC000 /* ImageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailView.swift; sourceTree = "<group>"; };
+		65695F272B8BC645009EC000 /* ShareSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 		65695F262B8BC60F009EC000 /* Share */ = {
 			isa = PBXGroup;
 			children = (
+				65695F272B8BC645009EC000 /* ShareSheetView.swift */,
 			);
 			path = Share;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				65695F1D2B8BB748009EC000 /* ImageGridView.swift in Sources */,
 				65695F122B8BA828009EC000 /* FlickrImageService.swift in Sources */,
 				65695F1A2B8BB368009EC000 /* SearchBarCoordinator.swift in Sources */,
+				65695F282B8BC645009EC000 /* ShareSheetView.swift in Sources */,
 				65695EE22B8BA222009EC000 /* FlickrImageSearchApp.swift in Sources */,
 				65695F102B8BA6A9009EC000 /* FlickrImageFeed.swift in Sources */,
 				65695F0D2B8BA3D9009EC000 /* FlickrImage.swift in Sources */,
