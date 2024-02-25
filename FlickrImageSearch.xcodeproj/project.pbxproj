@@ -112,6 +112,7 @@
 		65695EE02B8BA222009EC000 /* FlickrImageSearch */ = {
 			isa = PBXGroup;
 			children = (
+				65695F252B8BC605009EC000 /* Common */,
 				65695F0E2B8BA620009EC000 /* Networking */,
 				65695F0B2B8BA392009EC000 /* Flickr Image */,
 				65695F152B8BB0A8009EC000 /* Image Search */,
@@ -200,6 +201,21 @@
 				65695F232B8BBE1E009EC000 /* ImageDetailView.swift */,
 			);
 			path = "Image Detail";
+			sourceTree = "<group>";
+		};
+		65695F252B8BC605009EC000 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				65695F262B8BC60F009EC000 /* Share */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		65695F262B8BC60F009EC000 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Share;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
