@@ -19,10 +19,12 @@ struct ImageGridView: View {
                             switch phase {
                             case .empty, .failure:
                                 Image(systemName: "photo")
+                                    .accessibilityLabel("Failed to load image")
                                 case .success(let image):
                                     image.resizable()
                                          .aspectRatio(contentMode: .fit)
                                          .cornerRadius(10)
+//                                         .accessibilityLabel() TODO: get the image title properly and assign String to accessibilty label
                                 @unknown default:
                                     EmptyView()
                             }

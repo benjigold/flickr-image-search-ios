@@ -17,6 +17,7 @@ struct ContentView: View {
                     .overlay {
                         if viewModel.isLoading {
                             ProgressView()
+                                .accessibilityLabel("Loading image")
                         }
                     }
                     .padding()

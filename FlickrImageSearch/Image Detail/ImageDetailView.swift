@@ -15,15 +15,21 @@ struct ImageDetailView: View {
             VStack(alignment: .leading, spacing: 10) {
                 AsyncImage(url: URL(string: flickrImage.media?.m ?? ""))
                     .aspectRatio(contentMode: .fit)
+                    .accessibilityLabel("Image: \(flickrImage.title ?? "No Image")")
                 Text(flickrImage.title ?? "No Title")
                     .bold()
+                    .font(.headline)
                 Text(flickrImage.description ?? "No Description")
                     .font(.caption)
+                    .font(.body)
                 Text("Author: \(flickrImage.author ?? "Unknown")")
+                    .font(.subheadline)
                 Text("Published: \(flickrImage.published ?? "Unknown")")
+                    .font(.footnote)
             }
             .padding()
         }
         .navigationBarTitle(Text(flickrImage.title ?? "No Title"), displayMode: .inline)
+        .accessibilityElement(children: .combine)
     }
 }
