@@ -33,6 +33,9 @@ struct ImageDetailView: View {
                     .font(.subheadline)
                 Text("Published: \(flickrImage.published ?? "Unknown")")
                     .font(.footnote)
+                let dimensions = (flickrImage.description ?? "").extractImageDimensions()
+                Text("Width: \(dimensions.width) pixels, Height: \(dimensions.height) pixels")
+                    .font(.footnote)
                 Button(action: { self.isShareSheetShowing = true }) {
                     Text("Share")
                         .frame(minWidth: 0, maxWidth: .infinity)
