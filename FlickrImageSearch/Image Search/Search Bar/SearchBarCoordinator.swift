@@ -11,6 +11,6 @@ protocol SearchBarCoordinator {
     func makeCoordinator() -> Coordinator
 }
 
-class Coordinator: UISearchBarDelegate {
+class Coordinator: NSObject, UISearchBarDelegate {
     
 }
