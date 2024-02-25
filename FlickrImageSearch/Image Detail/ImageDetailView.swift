@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ImageDetailView: View {
-    @State private var isShareSheetShowing = false
+    @State private var isShareSheetShowing: Bool = false
     @State private var attributedDescription: AttributedString = AttributedString("")
     
     let flickrImage: FlickrImage
