@@ -25,6 +25,7 @@
 		65695F242B8BBE1E009EC000 /* ImageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F232B8BBE1E009EC000 /* ImageDetailView.swift */; };
 		65695F282B8BC645009EC000 /* ShareSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F272B8BC645009EC000 /* ShareSheetView.swift */; };
 		65695F2B2B8BC7DF009EC000 /* String+HTMLAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F2A2B8BC7DF009EC000 /* String+HTMLAttributedString.swift */; };
+		65695F2D2B8BCA16009EC000 /* String+ImageDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F2C2B8BCA16009EC000 /* String+ImageDimension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		65695F232B8BBE1E009EC000 /* ImageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailView.swift; sourceTree = "<group>"; };
 		65695F272B8BC645009EC000 /* ShareSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetView.swift; sourceTree = "<group>"; };
 		65695F2A2B8BC7DF009EC000 /* String+HTMLAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HTMLAttributedString.swift"; sourceTree = "<group>"; };
+		65695F2C2B8BCA16009EC000 /* String+ImageDimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ImageDimension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				65695F2A2B8BC7DF009EC000 /* String+HTMLAttributedString.swift */,
+				65695F2C2B8BCA16009EC000 /* String+ImageDimension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				65695EE42B8BA222009EC000 /* ContentView.swift in Sources */,
 				65695F142B8BACFC009EC000 /* FlickrImageViewModel.swift in Sources */,
 				65695F1D2B8BB748009EC000 /* ImageGridView.swift in Sources */,
+				65695F2D2B8BCA16009EC000 /* String+ImageDimension.swift in Sources */,
 				65695F122B8BA828009EC000 /* FlickrImageService.swift in Sources */,
 				65695F1A2B8BB368009EC000 /* SearchBarCoordinator.swift in Sources */,
 				65695F282B8BC645009EC000 /* ShareSheetView.swift in Sources */,
