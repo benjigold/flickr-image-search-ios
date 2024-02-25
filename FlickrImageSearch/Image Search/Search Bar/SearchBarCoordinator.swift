@@ -12,5 +12,5 @@ protocol SearchBarCoordinator {
 }
 
 class Coordinator: NSObject, UISearchBarDelegate {
-    
+    @Binding var text: String
 }
