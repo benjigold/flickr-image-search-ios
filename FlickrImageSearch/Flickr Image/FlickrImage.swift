@@ -25,6 +25,16 @@ extension FlickrImage: Decodable {
     }
 }
 
+extension FlickrImage: Hashable {
+    static func == (lhs: FlickrImage, rhs: FlickrImage) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+            hasher.combine(id)
+    }
+}
+
 struct Media: Decodable {
     let m: String?
 }
