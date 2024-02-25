@@ -11,4 +11,9 @@ import SwiftUI
 
 class FlickrImageViewModel: ObservableObject {
     @Published var images: [FlickrImage] = []
+    @Published var searchText: String = "" {
+        didSet {
+            fetchImages()
+        }
+    }
 }
