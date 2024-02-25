@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ImageDetailView: View {
     @State private var isShareSheetShowing = false
+    @State private var attributedDescription: AttributedString = AttributedString("")
     
     let flickrImage: FlickrImage
     
@@ -21,9 +22,13 @@ struct ImageDetailView: View {
                 Text(flickrImage.title ?? "No Title")
                     .bold()
                     .font(.headline)
-                Text(flickrImage.description ?? "No Description")
-                    .font(.caption)
+                Text(attributedDescription)
                     .font(.body)
+                    .onAppear {
+                        flickrImage.description?.convertHTMLToAttributedString { attributedString in
+                            self.attributedDescription = attributedString
+                        }
+                    }
                 Text("Author: \(flickrImage.author ?? "Unknown")")
                     .font(.subheadline)
                 Text("Published: \(flickrImage.published ?? "Unknown")")
