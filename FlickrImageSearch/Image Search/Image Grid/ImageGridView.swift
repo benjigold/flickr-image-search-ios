@@ -9,4 +9,26 @@ import SwiftUI
 
 struct ImageGridView: View {
     let images: [FlickrImage]
+    
+    var body: some View {
+        ScrollView {
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
+                ForEach(images) { image in
+                    AsyncImage(url: URL(string: image.media?.m ?? "")) { phase in
+                        switch phase {
+                        case .empty, .failure:
+                            Image(systemName: "photo")
+                            case .success(let image):
+                                image.resizable()
+                                     .aspectRatio(contentMode: .fit)
+                                     .cornerRadius(10)
+                            @unknown default:
+                                EmptyView()
+                        }
+                    }
+                }
+            }
+            .padding()
+        }
+    }
 }
