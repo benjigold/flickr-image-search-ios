@@ -14,10 +14,18 @@ struct ContentView: View {
         NavigationStack {
             VStack {
                 SearchBar(text: $viewModel.searchText)
+                    .overlay {
+                        if viewModel.isLoading {
+                            ProgressView()
+                        }
+                    }
                     .padding()
                 ImageGridView(images: viewModel.images)
             }
             .navigationBarTitle("Flickr Image Search")
+        }
+        .onChange(of: viewModel.searchText) {
+            viewModel.fetchImages() // Trigger image fetching when search text changes
         }
     }
 }
