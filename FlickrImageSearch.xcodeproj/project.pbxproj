@@ -27,6 +27,7 @@
 		65695F2B2B8BC7DF009EC000 /* String+HTMLAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F2A2B8BC7DF009EC000 /* String+HTMLAttributedString.swift */; };
 		65695F2D2B8BCA16009EC000 /* String+ImageDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F2C2B8BCA16009EC000 /* String+ImageDimension.swift */; };
 		65695F2F2B8BCBCE009EC000 /* String+FormatDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F2E2B8BCBCE009EC000 /* String+FormatDate.swift */; };
+		65695F312B8BCCA2009EC000 /* String+FormatAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F302B8BCCA2009EC000 /* String+FormatAuthor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		65695F2A2B8BC7DF009EC000 /* String+HTMLAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HTMLAttributedString.swift"; sourceTree = "<group>"; };
 		65695F2C2B8BCA16009EC000 /* String+ImageDimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ImageDimension.swift"; sourceTree = "<group>"; };
 		65695F2E2B8BCBCE009EC000 /* String+FormatDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+FormatDate.swift"; sourceTree = "<group>"; };
+		65695F302B8BCCA2009EC000 /* String+FormatAuthor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+FormatAuthor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +236,7 @@
 				65695F2A2B8BC7DF009EC000 /* String+HTMLAttributedString.swift */,
 				65695F2C2B8BCA16009EC000 /* String+ImageDimension.swift */,
 				65695F2E2B8BCBCE009EC000 /* String+FormatDate.swift */,
+				65695F302B8BCCA2009EC000 /* String+FormatAuthor.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65695F182B8BB229009EC000 /* SearchBar.swift in Sources */,
+				65695F312B8BCCA2009EC000 /* String+FormatAuthor.swift in Sources */,
 				65695EE42B8BA222009EC000 /* ContentView.swift in Sources */,
 				65695F142B8BACFC009EC000 /* FlickrImageViewModel.swift in Sources */,
 				65695F1D2B8BB748009EC000 /* ImageGridView.swift in Sources */,
