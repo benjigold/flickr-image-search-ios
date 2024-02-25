@@ -28,6 +28,16 @@ class FlickrImageService {
                 completion(.failure(NSError(domain: "", code: -1, userInfo: nil)))
                 return
             }
+            
+            do {
+                let feed = try JSONDecoder().decode(FlickrImageFeed.self, from: data)
+                DispatchQueue.main.async {
+                    guard let items = feed.items else { return }
+                    completion(.success(items))
+                }
+            } catch {
+                completion(.failure(error))
+            }
         }.resume()
     }
 }
