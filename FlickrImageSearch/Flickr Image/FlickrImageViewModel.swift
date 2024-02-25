@@ -20,6 +20,13 @@ class FlickrImageViewModel: ObservableObject {
     private var flickrImageService: FlickrImageService = FlickrImageService()
     
     func fetchImages() {
-        
+        flickrImageService.fetchImages(searchText: searchText) { result in
+            switch result {
+                case .success(let images):
+                    self.images = images
+                case .failure(let error):
+                    print(error)
+            }
+        }
     }
 }
