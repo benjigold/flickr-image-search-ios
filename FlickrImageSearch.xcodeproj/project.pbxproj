@@ -17,6 +17,7 @@
 		65695F0D2B8BA3D9009EC000 /* FlickrImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F0C2B8BA3D9009EC000 /* FlickrImage.swift */; };
 		65695F102B8BA6A9009EC000 /* FlickrImageFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F0F2B8BA6A9009EC000 /* FlickrImageFeed.swift */; };
 		65695F122B8BA828009EC000 /* FlickrImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F112B8BA828009EC000 /* FlickrImageService.swift */; };
+		65695F142B8BACFC009EC000 /* FlickrImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65695F132B8BACFC009EC000 /* FlickrImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		65695F0C2B8BA3D9009EC000 /* FlickrImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImage.swift; sourceTree = "<group>"; };
 		65695F0F2B8BA6A9009EC000 /* FlickrImageFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageFeed.swift; sourceTree = "<group>"; };
 		65695F112B8BA828009EC000 /* FlickrImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageService.swift; sourceTree = "<group>"; };
+		65695F132B8BACFC009EC000 /* FlickrImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				65695F0C2B8BA3D9009EC000 /* FlickrImage.swift */,
+				65695F132B8BACFC009EC000 /* FlickrImageViewModel.swift */,
 			);
 			path = "Flickr Image";
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65695EE42B8BA222009EC000 /* ContentView.swift in Sources */,
+				65695F142B8BACFC009EC000 /* FlickrImageViewModel.swift in Sources */,
 				65695F122B8BA828009EC000 /* FlickrImageService.swift in Sources */,
 				65695EE22B8BA222009EC000 /* FlickrImageSearchApp.swift in Sources */,
 				65695F102B8BA6A9009EC000 /* FlickrImageFeed.swift in Sources */,
