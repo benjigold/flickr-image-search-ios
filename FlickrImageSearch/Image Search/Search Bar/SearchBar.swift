@@ -20,3 +20,9 @@ struct SearchBar: UIViewRepresentable {
         uiView.text = text
     }
 }
+
+extension SearchBar: SearchBarCoordinator {
+    func makeCoordinator() -> Coordinator {
+        return Coordinator(text: $text)
+    }
+}
