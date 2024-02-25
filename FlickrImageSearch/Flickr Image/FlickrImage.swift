@@ -18,6 +18,13 @@ struct FlickrImage: Identifiable {
     let author: String?
 }
 
+extension FlickrImage: Decodable {
+    enum CodingKeys: String, CodingKey {
+        case title, link, media, description, published, author
+        case dateTaken = "date_taken"
+    }
+}
+
 struct Media: Decodable {
     let m: String?
 }
