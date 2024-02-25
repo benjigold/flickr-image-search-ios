@@ -14,21 +14,26 @@ struct ImageGridView: View {
         ScrollView {
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
                 ForEach(images) { image in
-                    AsyncImage(url: URL(string: image.media?.m ?? "")) { phase in
-                        switch phase {
-                        case .empty, .failure:
-                            Image(systemName: "photo")
-                            case .success(let image):
-                                image.resizable()
-                                     .aspectRatio(contentMode: .fit)
-                                     .cornerRadius(10)
-                            @unknown default:
-                                EmptyView()
+                    NavigationLink(value: image) {
+                        AsyncImage(url: URL(string: image.media?.m ?? "")) { phase in
+                            switch phase {
+                            case .empty, .failure:
+                                Image(systemName: "photo")
+                                case .success(let image):
+                                    image.resizable()
+                                         .aspectRatio(contentMode: .fit)
+                                         .cornerRadius(10)
+                                @unknown default:
+                                    EmptyView()
+                            }
                         }
                     }
                 }
             }
             .padding()
+        }
+        .navigationDestination(for: FlickrImage.self) { flickrImage in
+            ImageDetailView(flickrImage: flickrImage)
         }
     }
 }
