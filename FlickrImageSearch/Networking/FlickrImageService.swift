@@ -19,7 +19,10 @@ class FlickrImageService {
         guard let url = urlComponents.url else { return }
         
         URLSession.shared.dataTask(with: url) { data, response, error in
-            
+            if let error {
+                completion(.failure(error))
+                return
+            }
         }.resume()
     }
 }
