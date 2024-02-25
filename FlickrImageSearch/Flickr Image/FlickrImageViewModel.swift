@@ -10,5 +10,5 @@ import Foundation
 import SwiftUI
 
 class FlickrImageViewModel: ObservableObject {
-    
+    @Published var images: [FlickrImage] = []
 }
