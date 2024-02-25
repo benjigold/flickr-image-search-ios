@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel: FlickrImageViewModel = FlickrImageViewModel()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
