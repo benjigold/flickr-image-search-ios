@@ -17,4 +17,8 @@ class Coordinator: NSObject, UISearchBarDelegate {
     init(text: Binding<String>) {
         _text = text
     }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        text = searchText
+    }
 }
