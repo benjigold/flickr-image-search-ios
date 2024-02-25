@@ -16,4 +16,10 @@ class FlickrImageViewModel: ObservableObject {
             fetchImages()
         }
     }
+    
+    private var flickrImageService: FlickrImageService = FlickrImageService()
+    
+    func fetchImages() {
+        
+    }
 }
