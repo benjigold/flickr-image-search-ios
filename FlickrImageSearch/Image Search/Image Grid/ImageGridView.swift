@@ -8,5 +8,5 @@
 import SwiftUI
 
 struct ImageGridView: View {
-    
+    let images: [FlickrImage]
 }
