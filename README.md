@@ -7,7 +7,7 @@ No 3rd party dependencies used - just build and run in Xcode! I used the latest 
 
 ## Git Management
 
-I pushed my code changes directly to the master branch 🙈. I would never do that in a large scale production application; but for the sake of this 3-hour exercise, I pushed my code changes directly to the "master" branch. Normally, I would follow a git flow methodology for  managing code changes.
+I pushed my code changes directly to the master branch 🙈. I would never do that in a large scale production application, but for the sake of this 3-hour exercise I figured it was not a big deal. Normally, I would follow a git flow methodology for  managing code changes, which is especially important when multiple developers are working on the same codebase at once.
 
 ## Notes
 
